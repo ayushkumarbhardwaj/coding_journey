@@ -3,8 +3,6 @@ This is my coding journey in MCA.
 *********Pattern Print**********
 Square Print 
 
-
-
 #include<iostream>
 int main()
 {
@@ -139,4 +137,13 @@ for(i=1;i<=5;i++)
         }cout<<endl;
     }
     return 0;
+}
+#include<iostream>
+int main()
+{ int a,b,max;
+cout<<"Enter a Number :";
+cin>>a>>b;
+max=max(a,b);
+cout<<"Maximum Number is:"<<max;
+return 0;
 }
