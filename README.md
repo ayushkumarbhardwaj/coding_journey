@@ -11,7 +11,6 @@ This is my coding journey in MCA.
 
 
 
-
 Square Print 
 
 #include<iostream>
