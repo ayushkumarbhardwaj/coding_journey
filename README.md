@@ -1,13 +1,189 @@
 # coding_journey
 This is my coding journey in MCA.
 *********Pattern Print**********
+
+
+
+
+
+
+
+
+
+
+
+
 Square Print 
 
 #include<iostream>
 int main()
 {
 
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
 
+
+int i,j,a=1;
+for(i=1;i<=5;i++)
+{
+    for(j=1;j<=i;j++)
+    {
+        cout<<a<<" ";
+        a++;
+    }cout<<endl;
+}
+
+
+
+
+
+
+
+    
+
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+   int i,j;
+   for(i=0;i<5;i++)
+   {
+    for(j=0;j<=i;j++)
+    {
+      cout<<"*";
+    }
+    for(j=0;j<5-i-1;j++)
+    {
+        cout<<" ";
+    }cout<<endl;
+   }
+   for(i=0;i<4;i++)
+   {
+    for(j=0;j<4-i;j++)
+    {
+      cout<<"*";
+    }
+    for(j=0;j<=i;j++)
+    {
+        cout<<" ";
+    }cout<<endl;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+     *
+    ***
+   *****
+  *******
+ *********
+ *********
+  *******
+   *****
+    ***
+     *
+int i,j;
+for(i=0;i<5;i++)
+{
+    for(j=0;j<5-i;j++)
+    {
+        cout<<" ";
+    }
+    for(j=0;j<2*i+1;j++)
+    {
+        cout<<"*";
+    }
+    for(j=0;j<5-i;j++)
+    {
+        cout<<" ";
+    }cout<<endl;
+}
+for(i=0;i<5;i++)
+{
+    for(j=0;j<i+1;j++)
+    {
+        cout<<" ";
+    }
+    for(j=0;j<2*(5-i)-1;j++)
+    {
+        cout<<"*";
+    }
+    for(j=0;j<i+1;j++)
+    {
+        cout<<" ";
+    }cout<<endl;
+}
+
+
+
+
+
+
+ *********
+  *******
+   *****
+    ***
+     *
+for(i=0;i<5;i++)
+{
+    for(j=0;j<i+1;j++)
+    {
+        cout<<" ";
+    }
+    for(j=0;j<2*(5-i)-1;j++)
+    {
+        cout<<"*";
+    }
+    for(j=0;j<i+1;j++)
+    {
+        cout<<" ";
+    }cout<<endl;
+}
+
+
+
+
+
+
+
+     *
+    ***
+   *****
+  *******
+ *********
+int i,j;
+for(i=0;i<5;i++)
+{
+    for(j=0;j<5-i;j++)
+    {
+        cout<<" ";
+    }
+    for(j=0;j<2*i+1;j++)
+    {
+        cout<<"*";
+    }
+    for(j=0;j<5-i;j++)
+    {
+        cout<<" ";
+    }cout<<endl;
+}
 
 
     12345
