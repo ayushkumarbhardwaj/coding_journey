@@ -4,6 +4,103 @@ This is my coding journey in MCA.
 
 
 
+    A 
+    B B
+    C C C
+    D D D D
+    E E E E E
+    int i;
+    for(i=0;i<5;i++)
+    {
+        for(int j=0;j<=i;j++)
+        { char a='A'+i;
+            cout<<a<<" ";
+        }cout<<endl;
+    }
+
+
+
+    A B C D E 
+    A B C D
+    A B C
+    A B
+    A
+    int i;
+    for(i=5;i>=1;i--)
+    {
+        for(char j='A';j<'A'+i;j++)
+       {
+         cout<<j<<" ";
+       }cout<<endl;
+    }
+
+
+
+    A 
+    A B
+    A B C
+    A B C D
+    A B C D E
+    int i;
+    for(i=1;i<=5;i++)
+    {
+        for(char j= 'A';j<'A'+i;j++)
+        {
+            cout<<j<<" ";
+        }cout<<endl;
+    }
+
+
+
+
+
+1 
+0 1
+1 0 1
+0 1 0 1
+1 0 1 0 1
+int i,j,start;
+for(i=1;i<=5;i++)
+{
+    if(i%2==0)
+    start=0;else start=1;
+    for(j=1;j<=i;j++)
+    {
+        cout<<start<<" ";
+        start=1-start;
+    }cout<<endl;
+}
+
+
+
+
+
+
+
+
+
+
+1      1
+12    21
+123  321
+12344321
+int i,j;
+for(i=1;i<=4;i++)
+{
+    for(j=1;j<=i;j++)
+    {
+        cout<<j;
+    }
+    for(j=1;j<=2*(4-i);j++)
+    {
+        cout<<" ";
+    }
+    for(j=i;j>=1;j--)
+    {
+        cout<<j;
+    }cout<<endl;
+}
+
 
 
 
