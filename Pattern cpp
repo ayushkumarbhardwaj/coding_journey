@@ -1,0 +1,145 @@
+	
+coding_journey
+This is my coding journey in MCA. Pattern Print*
+
+A 
+B B
+C C C
+D D D D
+E E E E E
+int i;
+for(i=0;i<5;i++)
+{
+    for(int j=0;j<=i;j++)
+    { char a='A'+i;
+        cout<<a<<" ";
+    }cout<<endl;
+}
+
+
+
+A B C D E 
+A B C D
+A B C
+A B
+A
+int i;
+for(i=5;i>=1;i--)
+{
+    for(char j='A';j<'A'+i;j++)
+   {
+     cout<<j<<" ";
+   }cout<<endl;
+}
+
+
+
+A 
+A B
+A B C
+A B C D
+A B C D E
+int i;
+for(i=1;i<=5;i++)
+{
+    for(char j= 'A';j<'A'+i;j++)
+    {
+        cout<<j<<" ";
+    }cout<<endl;
+}
+1 0 1 1 0 1 0 1 0 1 1 0 1 0 1 int i,j,start; for(i=1;i<=5;i++) { if(i%2==0) start=0;else start=1; for(j=1;j<=i;j++) { cout<<start<<" "; start=1-start; }cout<<endl; }
+
+1 1 12 21 123 321 12344321 int i,j; for(i=1;i<=4;i++) { for(j=1;j<=i;j++) { cout<<j; } for(j=1;j<=2*(4-i);j++) { cout<<" "; } for(j=i;j>=1;j--) { cout<<j; }cout<<endl; }
+
+Square Print
+
+#include int main() {
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+
+int i,j,a=1; for(i=1;i<=5;i++) { for(j=1;j<=i;j++) { cout<<a<<" "; a++; }cout<<endl; }
+
+**
+
+** * int i,j; for(i=0;i<5;i++) { for(j=0;j<=i;j++) { cout<<""; } for(j=0;j<5-i-1;j++) { cout<<" "; }cout<<endl; } for(i=0;i<4;i++) { for(j=0;j<4-i;j++) { cout<<""; } for(j=0;j<=i;j++) { cout<<" "; }cout<<endl; }
+
+ *
+***
+***
+ *
+int i,j; for(i=0;i<5;i++) { for(j=0;j<5-i;j++) { cout<<" "; } for(j=0;j<2i+1;j++) { cout<<""; } for(j=0;j<5-i;j++) { cout<<" "; }cout<<endl; } for(i=0;i<5;i++) { for(j=0;j<i+1;j++) { cout<<" "; } for(j=0;j<2*(5-i)-1;j++) { cout<<"*"; } for(j=0;j<i+1;j++) { cout<<" "; }cout<<endl; }
+
+***
+ *
+for(i=0;i<5;i++) { for(j=0;j<i+1;j++) { cout<<" "; } for(j=0;j<2*(5-i)-1;j++) { cout<<"*"; } for(j=0;j<i+1;j++) { cout<<" "; }cout<<endl; }
+
+ *
+***
+int i,j; for(i=0;i<5;i++) { for(j=0;j<5-i;j++) { cout<<" "; } for(j=0;j<2i+1;j++) { cout<<""; } for(j=0;j<5-i;j++) { cout<<" "; }cout<<endl; }
+
+12345
+1234
+123
+12
+1
+int i,j;
+for(i=5;i>=1;i--)
+{
+    for(j=1;j<=i;j++)
+    {
+        cout<<j;
+    }cout<<endl;
+}
+
+
+
+
+
+
+
+
+*****
+****
+***
+**
+* 
+int i,j; for(i=1;i<=5;i++) { for(j=5;j>=i;j--) { cout<<"*"; }cout<<endl; }
+
+1
+22
+333
+4444
+55555
+int i,j; for(i=1;i<=5;i++) { for(j=1;j<=i;j++) { cout<<i; }cout<<endl; }
+
+ 1 
+ 12
+ 123
+ 1234
+ 12345
+int i,j; for(i=1;i<=5;i++) { for(j=1;j<=i;j++) { cout<<j; }cout<<endl; }
+
+  * 
+  *  *
+  *  *  *
+  *  *  *  *
+  *  *  *  *  *
+int i,j; for(i=1;i<=5;i++) { for(j=1;j<=i;j++) { cout<<" * "; }cout<<endl; }
+
+.........>PATTERN PRIINT<.........
+
+ *  *  *  *  * 
+ *  *  *  *  * 
+ *  *  *  *  * 
+ *  *  *  *  * 
+ *  *  *  *  * 
+int i,j;
+for(i=1;i<=5;i++)
+{
+    for(j=1;j<=5;j++)
+    {
+       cout<<" * ";
+    }cout<<endl;
+}
+return 0;
+} #include int main() { int a,b,max; cout<<"Enter a Number :"; cin>>a>>b; max=max(a,b); cout<<"Maximum Number is:"<<max; return 0; }
