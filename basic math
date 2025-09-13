@@ -1,5 +1,9 @@
  Enter your number for Reverse :123
-Reverse is :321   
+Reverse is :321  
+#include<iostream>
+using namespace std;
+int main()
+{
 long rev=0,x;
 cout<<"Enter your number for Reverse :";
 cin>>x;
@@ -11,3 +15,5 @@ while(x!=0)
 }
 
 cout<<"Reverse is :"<<rev;
+return 0;
+}
