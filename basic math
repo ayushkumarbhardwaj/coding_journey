@@ -1,0 +1,13 @@
+ Enter your number for Reverse :123
+Reverse is :321   
+long rev=0,x;
+cout<<"Enter your number for Reverse :";
+cin>>x;
+while(x!=0)
+{
+    int c=x%10;
+    rev=rev*10+c;
+    x=x/10;
+}
+
+cout<<"Reverse is :"<<rev;
