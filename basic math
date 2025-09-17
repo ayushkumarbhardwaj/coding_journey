@@ -1,19 +1,18 @@
  Enter your number for Reverse :123
 Reverse is :321  
-#include<iostream>
-using namespace std;
-int main()
-{
-long rev=0,x;
-cout<<"Enter your number for Reverse :";
-cin>>x;
-while(x!=0)
-{
-    int c=x%10;
-    rev=rev*10+c;
-    x=x/10;
-}
-
-cout<<"Reverse is :"<<rev;
-return 0;
-}
+class Solution {
+public:
+    int reverse(int x) {
+        long long rev =0;
+        while(x!=0)
+        {
+           long long b=x%10;
+            rev=rev*10+b;
+            x=x/10;
+            if (rev > INT_MAX || rev < INT_MIN) {
+                return 0;
+            }
+        }
+        return (int)rev;
+    }
+};
