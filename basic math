@@ -1,4 +1,40 @@
- Enter your number for Reverse :123
+>>>>>>>>>>>............<<<<<<<<<<<<<
+Input : n = 20
+Output: 1 2 4 5 10 20
+
+
+
+class Solution {
+  public:
+    void print_divisors(int n) {
+        int i;
+        
+       vector<int> vec;
+        for( i=1;i*i<=n;i++)
+        {
+            if(n%i==0)
+            {
+                vec.push_back(i);
+               if(i!=n/i){
+                   vec.push_back(n/i);
+               }
+            }
+        }
+        sort(vec.begin(),vec.end());
+        
+        for(int res : vec){
+            cout<<res<<" ";
+        }
+        
+        
+        
+    }
+};
+
+
+>>>>>>>>>>>............<<<<<<<<<<<<<
+
+Enter your number for Reverse :123
 Reverse is :321  
 class Solution {
 public:
