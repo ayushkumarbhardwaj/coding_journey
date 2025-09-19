@@ -3,6 +3,7 @@ All divisors of a Number
 Input : n = 20
 Output: 1 2 4 5 10 20
 
+
 class Solution {
   public:
     void print_divisors(int n) {
