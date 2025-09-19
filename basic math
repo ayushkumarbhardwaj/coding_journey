@@ -51,3 +51,26 @@ public:
         return (int)rev;
     }
 };
+
+
+>>>>>>>>>>>............<<<<<<<<<<<<<
+Find Number is Armstrong Numbers
+
+// User function Template for C++
+class Solution {
+  public:
+    bool armstrongNumber(int n) {
+        // code here
+        int sum=0,b,num;
+        num=n;
+        while(n!=0)
+        {
+            b=n%10;
+            sum=sum+(b*b*b);
+            n=n/10;
+        }
+        if(num==sum)
+        return true;
+        else return false;
+    }
+};
