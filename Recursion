@@ -1,0 +1,16 @@
+
+>>>>>>>>>>>>>>>>......................<<<<<<<<<<<<<<<<<<<<<<<
+Print GFG n times without the loop.
+
+class Solution {
+  public:
+    void printGfg(int N ,int count=0) {
+        // Code here
+        
+        if(count==N)
+        {
+            return;
+        }cout<<"GFG ";
+        printGfg(N,count+1);
+    }
+};
