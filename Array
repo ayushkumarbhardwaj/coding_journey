@@ -1,0 +1,20 @@
+>>>>>>>>>>>>>>>>>>......................<<<<<<<<<<<<<<<<<<<<<<<<
+Largest Element in Array
+
+class Solution {
+  public:
+    int largest(vector<int> &arr) {
+        // code here
+        int n = arr.size();
+        int key = arr[0];
+        for(int i=1;i<n;i++)
+        {
+            if(key<arr[i])
+            {
+                key = arr[i];
+            }
+    
+        }
+        return key;
+    }
+};
