@@ -1,4 +1,24 @@
 >>>>>>>>>>>............<<<<<<<<<<<<<
+Sum Of Digits
+
+
+class Solution {
+  public:
+    int sumOfDigits(int n) {
+        // code here
+        int sum=0;
+        while(n!=0)
+        {
+            int b=n%10;
+            sum=sum+b;
+            n=n/10;
+        }
+        return sum;
+    }
+};
+
+
+>>>>>>>>>>>............<<<<<<<<<<<<<
 All divisors of a Number
 Input : n = 20
 Output: 1 2 4 5 10 20
