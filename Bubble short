@@ -7,7 +7,6 @@ Enter a number :
 1 4 5 6 8 
 
 
-
 #include<iostream>
 using namespace std;
 void bubbleSort(int arr[],int n)
