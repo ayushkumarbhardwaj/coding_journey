@@ -1,3 +1,7 @@
+
+
+
+
 >>>>>>>>>>>............<<<<<<<<<<<<<
 Sum Of Digits
 
@@ -162,5 +166,37 @@ class Solution {
             a = temp;
         }
         return a;
+    }
+};
+
+
+>>>>>>>>>>>............<<<<<<<<<<<<<
+Find day of the week for a given date
+d = 28, m = 12, y = 1995
+Output:
+Thursday
+
+
+class Solution {
+  public:
+    string getDayOfWeek(int d, int m, int y) {
+        
+        if (m == 1) {
+            m = 13;
+            y--;
+        } else if (m == 2) {
+            m = 14;
+            y--;
+        }
+
+        int K = y % 100;   
+        int J = y / 100;   
+
+        int h = (d + (13 * (m + 1)) / 5 + K + K / 4 + J / 4 + 5 * J) % 7;
+
+       
+        string days[] = {"Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+
+        return days[h];
     }
 };
