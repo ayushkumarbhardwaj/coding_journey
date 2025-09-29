@@ -3,6 +3,7 @@ This is my coding journey in MCA.
 *********Pattern Print**********
 
 
+
     A 
     B B
     C C C
