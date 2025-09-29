@@ -1,4 +1,20 @@
 >>>>>>>>>>>............<<<<<<<<<<<<<
+Swap two numbers
+
+class Solution {
+  public:
+    pair<int, int> get(int a, int b) {
+        // code here
+        int c;
+        c=a;
+        a=b;
+        b=c;
+        return {a,b};
+    }
+};
+
+
+>>>>>>>>>>>............<<<<<<<<<<<<<
 Multiplication Table
 
 // User function Template for C++
