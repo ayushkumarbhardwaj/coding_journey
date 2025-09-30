@@ -1,4 +1,19 @@
 >>>>>>>>>>>............<<<<<<<<<<<<<
+Given the three sides of a triangle a, b, and c. Check whether the triangle is valid or not.
+
+// User function Template for C++
+class Solution {
+  public:
+    bool checkValidity(int a, int b, int c) {
+        // code here
+        if((a+b)>c && (b+c)>a && (c+a)>b)
+        {return true;}
+       return false;
+    }
+};
+
+
+>>>>>>>>>>>............<<<<<<<<<<<<<
 Series AP
 
 // User function template for C++
