@@ -1,5 +1,6 @@
 
 >>>>>>>>>>>>>>>>>>>>...........................<<<<<<<<<<<<<<<<<<<<<<<
+Repeated sum of digits
 
 class Solution {
   public:
