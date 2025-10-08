@@ -1,3 +1,17 @@
+// User function Template for C++
+class Solution {
+  public:
+    int sumOfSquares(int n) {
+        // code here
+        double a = (n*(n+1)*(2*n+1))/6;
+         return a;
+        
+    }
+};
+
+
+
+
 Simple Interest
 
 // User function Template for C++
