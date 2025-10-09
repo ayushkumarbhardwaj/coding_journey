@@ -1,3 +1,20 @@
+
+// Sum of n natural number cube 
+// User function template for C++
+
+class Solution {
+  public:
+    int sumOfSeries(int n) {
+        // code here
+        return ((n*(n+1)/2)*(n*(n+1)/2));
+    }
+};
+
+
+
+
+
+
 // User function Template for C++
 class Solution {
   public:
