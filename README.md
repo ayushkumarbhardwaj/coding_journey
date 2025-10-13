@@ -1,6 +1,28 @@
 
 class Solution {
   public:
+    bool checkYear(int n) {
+        // code here
+        if((n%400==0) || (n%4==0 && n%100!=0))
+        {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+};
+
+
+
+
+
+
+
+
+
+class Solution {
+  public:
     /*Function to count even and odd elements in the array
      * arr : Array with its elements
      */
