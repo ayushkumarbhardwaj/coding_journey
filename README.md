@@ -1,3 +1,32 @@
+
+
+class Solution {
+  public:
+    string isPrime(int n) {
+
+        if (n < 2) {
+            return "No";  // 0 and 1 are not prime
+        }
+
+        for (int i = 2; i <= sqrt(n); i++) {
+            if (n % i == 0) {
+                return "No";  // divisible → not prime
+            }
+        }
+
+        return "Yes";  // no divisor found → prime
+    }
+};
+
+
+
+
+
+
+
+
+
+
 bool prime(int n) {
     if (n < 2) {
         return false;
