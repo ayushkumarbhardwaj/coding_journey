@@ -1,3 +1,28 @@
+void utility(int n) {
+
+    // just complete below statement
+    
+    int ans;
+    if(n>=0)
+    {
+       ans =n%10;
+    } else {
+        n= (-n);
+        ans =n%10;
+    }
+
+        // print the result
+        cout << ans << endl;
+}
+
+
+
+
+
+
+
+
+
 int apTerm(int a, int d, int n) {
     // code here
     
