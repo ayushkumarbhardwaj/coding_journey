@@ -1,3 +1,61 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        vector<int> a(n);
+        for (int &x : a) {
+            cin >> x;
+        }
+
+        sort(a.begin(), a.end());
+
+        // Count distinct values
+        vector<int> values;
+        vector<int> freq;
+        for (int i = 0; i < n; ) {
+            int j = i;
+            while (j < n && a[j] == a[i]) j++;
+            values.push_back(a[i]);
+            freq.push_back(j - i);
+            i = j;
+        }
+
+        // More than 2 distinct values → No
+        if (values.size() > 2) {
+            cout << "No\n";
+        }
+        else if (values.size() == 1) {
+            cout << "Yes\n"; // All elements same
+        }
+        else {
+            // Two distinct values
+            if (abs(freq[0] - freq[1]) <= 1) 
+                cout << "Yes\n";
+            else 
+                cout << "No\n";
+        }
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
 void utility(int n) {
 
     // just complete below statement
