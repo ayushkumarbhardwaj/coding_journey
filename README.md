@@ -1,3 +1,21 @@
+#include <iostream>
+using namespace std;
+
+void utility() {
+    int a;
+    string b;
+
+    cin >> a >> b;          // taking input for both variables
+    cout << a << " " << b << endl;   // printing with space and newline
+}
+
+
+
+
+
+
+
+
 
 void swapNumbers(int &a, int &b) {
     a = a + b;
