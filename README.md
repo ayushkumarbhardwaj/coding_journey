@@ -1,3 +1,22 @@
+class Solution {
+  public:
+    int lastDigit(int n) {
+        // Code here
+        int a;
+        if(n<0)
+        {
+            n=(-n);
+        }
+        a=n%10;
+        return a;
+    }
+};
+
+
+
+
+
+
 // User function Template for C++
 
 void utility(int number) {
