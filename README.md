@@ -1,3 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // code here
+    int X,Y;
+    cin>>X>>Y;
+    cout<<X+Y<<" "<<X-Y<<" "<<X*Y<<" "<<X/Y<<" "<<X%Y;
+    return 0;
+}
+
+
+
+
+
+
+
 class Solution {
   public:
     int lastDigit(int n) {
