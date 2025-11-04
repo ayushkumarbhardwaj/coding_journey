@@ -1,3 +1,41 @@
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<.......................>>>>>>>>>>>>>>>>>>>>>>>>>>>
+             Next Prime Number
+
+// User function Template for C++
+
+int nextPrime(int n) {
+
+    // code here to find next prime number
+    // return next prime number
+    for(int i=n+1;i>1;i++)
+    {
+        bool prime=true;
+        for(int j=2;j<=i/2;j++)
+        {
+             if(i%j==0)
+             {
+                 prime = false;
+                 break;
+             }
+    
+        
+        }
+        if(prime)
+        {
+            return i;
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
 <<<<<<<<<<<<<<<<<<<.......................>>>>>>>>>>>>>>>>>>>>
 Function Template
 
