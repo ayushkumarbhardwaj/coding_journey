@@ -1,3 +1,27 @@
+<<<<<<<<<<<<<<<<<<<....................>>>>>>>>>>>>>>>>>>>>>
+Type conversion
+#include <iostream>
+using namespace std;
+
+int main() {
+    double d;
+    cin >> d;
+    // Typecast and Print
+    int a;
+    a=d;
+    cout<<a;
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<.......................>>>>>>>>>>>>>>>>>>>>>>>>.
 \\Frist digit of a number
 
