@@ -1,3 +1,36 @@
+<<<<<<<<<<<<<<<<<<<<<<..................>>>>>>>>>>>>>>>>>
+ Array Search
+
+class Solution {
+  public:
+    int search(vector<int>& arr, int x) {
+        // code here
+        int n=arr.size();
+        int count=0;
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]==x)
+            {
+                count++;
+                return i;
+            }
+        }
+        if(count<1)
+        {
+            return -1;
+        }
+    }
+};
+
+
+
+
+
+
+
+
+
+
 <<<<<<<<<<<<<<<<<<<<<<..................>>>>>>>>>>>>>>>>>>>>
          Move Zeroes (Array)
 
