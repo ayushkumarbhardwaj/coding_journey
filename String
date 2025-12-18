@@ -1,3 +1,43 @@
+<<<<<<<<<<<<<<<<<<<..........>>>>>>>>>>>>>>>>>.
+Geeks And The String
+
+class Solution {
+  public:
+    string removePair(string s) {
+        // code here
+        string a;
+        int n=s.length();
+        for(int i=0;i<n;i++)
+        {
+            if(!a.empty() && s[i]==a.back())
+            {
+                a.pop_back();
+            }
+            else
+            {
+                a.push_back(s[i]);
+            }
+        }
+        if(a.empty())
+        {
+           return "-1"; 
+        }
+        else{
+        return a;
+        }
+        
+    }
+};
+
+
+
+
+
+
+
+
+
+
 <<<<<<<<<<<<<<<<<<............>>>>>>>>>>>>>>>>>>>
 Find the Original Typed String I
 
