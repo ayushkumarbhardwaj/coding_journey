@@ -1,3 +1,31 @@
+<<<<<<<<<<<<<<<<<<............>>>>>>>>>>>>>>>>>>>
+Find the Original Typed String I
+
+class Solution {
+public:
+    int possibleStringCount(string word) {
+        int count=1;
+        int n=word.length();
+        int j=0;
+        for(int i=1;i<=n;i++)
+            {
+                if(word[j]==word[i])
+                    {
+                    count++;
+                    }
+                 j=i;
+            }
+        return count;
+    }
+};
+
+
+
+
+
+
+
+
 <<<<<<<<<<<<<<<<<.................>>>>>>>>>>>>>>
 Fizz Buzz
 
