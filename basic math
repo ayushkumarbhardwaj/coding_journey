@@ -1,3 +1,38 @@
+<<<<<<<<<<<<<<<<.............>>>>>>>>>>>>>>
+Pow(x, n)
+
+class Solution {
+public:
+    double myPow(double x, int n) {
+       double ans=1.0;
+       long long mn=n;
+       if(mn<0) mn = -1*mn;
+       while(mn>0)
+       {
+        if(mn%2==1)
+        {
+            ans=ans*x;
+            mn--;
+        }
+        else
+        {
+            x=x*x;
+            mn=mn/2;
+        }
+       }
+       if(n<0) return 1.0/ans;
+       return ans;
+    }
+};
+
+
+
+
+
+
+
+
+
 <<<<<<<<<<<<<<<<<<<<<<..................>>>>>>>>>>>>>>>>>>>>
 N-th Tribonacci series
 
