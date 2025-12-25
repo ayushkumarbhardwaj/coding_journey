@@ -1,3 +1,37 @@
+<<<<<<<<<<<<<<<<<<<................>>>>>>>>>>>>>>>>>>
+Container With Most Water
+
+class Solution {
+public:
+    int maxArea(vector<int>& height) {
+        int n=height.size()-1;
+        int i=0;
+        int ans=0;
+        int maxw=0;
+        while(n>i)
+        {
+          if(height[i]<=height[n])
+          {
+            ans=(n-i)*height[i];
+            i++;
+            maxw=max(ans,maxw);
+          }
+          else
+          {
+            ans=(n-i)*height[n];
+            n--;
+           maxw=max(ans,maxw);
+          }
+        }
+        return maxw;
+    }
+};
+
+
+
+
+
+
 <<<<<<<<<<<<<<<<<<<..............>>>>>>>>>>>>>>>>>
 Reverse an Array
 
