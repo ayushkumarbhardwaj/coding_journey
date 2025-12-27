@@ -1,3 +1,36 @@
+<<<<<<<<<<<<<<<<<...............>>>>>>>>>>>>>>
+Find Numbers with Even Number of Digits
+
+class Solution {
+public:
+    int findNumbers(vector<int>& nums) {
+        int count =0,n=nums.size();
+        for(int i=0;i<n;i++)
+        {
+            int a=0;
+            while(nums[i]>0)
+            {
+                nums[i]=nums[i]/10;
+                a++;
+            }
+            if(a%2==0)
+            {
+                count++;
+            }
+            a=0;
+        }
+        return count;
+    }
+};
+
+
+
+
+
+
+
+
+
 <<<<<<<<<<<<<<<<<<<................>>>>>>>>>>>>>>>>>>
 Container With Most Water
 
