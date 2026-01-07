@@ -1,3 +1,34 @@
+<<<<<<<<<<<<<<<............>>>>>>>>>>>>>>>
+Ceil in a Sorted Array
+
+// User function Template for C++
+class Solution {
+  public:
+    int findCeil(vector<int>& arr, int x) {
+        // code here
+        int low=0,high=arr.size()-1;
+        int t=high+1;
+        while(low<=high)
+        {
+            int mid=low+(high-low)/2;
+            
+            if(arr[mid]>=x)
+            {
+                high=mid-1;
+            }
+            else
+            low=mid+1;
+        }
+        if(low==t) return -1;
+        return low;
+    }
+};
+
+
+
+
+
+
 <<<<<<<<<<<<<<<<<<<<<<<<<................>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Find First and Last Position of Element in Sorted Array
 
