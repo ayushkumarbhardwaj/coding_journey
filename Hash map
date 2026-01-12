@@ -1,3 +1,36 @@
+<<<<<<<<<<<<<<<<<...............>>>>>>>>>>>>>>>
+Count Elements With Maximum Frequency
+
+class Solution {
+public:
+    int maxFrequencyElements(vector<int>& nums) {
+        int ans=0;
+        unordered_map<int,int>m;
+        for(int i:nums)
+        {
+            m[i]++;
+        }
+        for(auto j:m)
+        {
+           ans=max(ans,j.second);
+        }
+        int count=0;
+        for(auto k:m)
+        {
+            if(ans==k.second)
+            {
+                count+=k.second;
+            }
+        }
+        return count;
+    }
+};
+
+
+
+
+
+
 <<<<<<<<<<<<<<<<..............>>>>>>>>>>>>>>>>
 Frequencies in a Limited Array
 
