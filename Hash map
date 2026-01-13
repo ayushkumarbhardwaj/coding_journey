@@ -1,3 +1,48 @@
+
+
+
+class Solution {
+public:
+    vector<vector<int>> findWinners(vector<vector<int>>& matches) {
+        unordered_map<int,int>lose;
+        for(int i=0;i<matches.size();i++)
+        {
+            int loss=matches[i][1];
+            lose[loss]++;
+        }
+        vector<int>alose,blose;
+        unordered_set<int>seenA,seenB;
+
+        for(int i=0;i<matches.size();i++)
+        {
+            int frist=matches[i][0];
+            int second=matches[i][1];
+            if(lose.find(frist)==lose.end() && !seenA.count(frist))
+            {
+                alose.push_back(frist);
+                seenA.insert(frist);
+            }
+            if(lose[second]==1 && !seenB.count(second))
+            {
+                blose.push_back(second);
+                seenB.insert(second);
+                
+            }
+        }
+        sort(alose.begin(),alose.end());
+        sort(blose.begin(),blose.end());
+        return {alose,blose};
+    }
+};
+
+
+
+
+
+
+
+
+
 <<<<<<<<<<<<<<<<<...............>>>>>>>>>>>>>>>
 Count Elements With Maximum Frequency
 
