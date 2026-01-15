@@ -1,3 +1,28 @@
+<<<<<<<<<<<<<<..........>>>>>>>>>>>>>>
+Rotate Image
+
+class Solution {
+public:
+    void rotate(vector<vector<int>>& matrix) {
+        int n=matrix.size();
+        for(int j=0;j<n-1;j++)
+        {
+            for(int i=j+1;i<n;i++)
+            {
+                swap(matrix[i][j],matrix[j][i]);
+            }
+        }
+        for(int i=0;i<n;i++)
+        {
+            reverse(matrix[i].begin(),matrix[i].end());
+        }
+    
+    }
+};
+
+
+
+
 <<<<<<<<<<<<<<<............>>>>>>>>>>>>>>>
 Arranging the array
 
