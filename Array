@@ -1,3 +1,43 @@
+<<<<<<<<<<<<<<<<..............>>>>>>>>>>>>>>>>
+Missing And Repeating
+
+class Solution {
+  public:
+    vector<int> findTwoElement(vector<int>& arr) {
+        // code here
+        vector<int> ans;
+        int n=arr.size(),a=0;
+        unordered_map<int ,int> m;
+        for(int x : arr)
+        {
+            m[x]++;
+        }
+        for(auto &i :m)
+        {
+             if(i.second>1)
+            {
+                ans.push_back(i.first);
+                break;
+            }
+        }
+        for(int i=1;i<=n;i++)
+        {
+            if(m.find(i)==m.end()) {
+                ans.push_back(i);
+                break;
+            }
+        }
+        return ans;
+    }
+};
+
+
+
+
+
+
+
+
 <<<<<<<<<<<<<<................>>>>>>>>>>>>
 3Sum
 
