@@ -1,3 +1,33 @@
+<<<<<<<<<<<<<<<<............>>>>>>>>>>>>>>>
+Find nth root of m
+
+class Solution {
+  public:
+    int nthRoot(int n, int m) {
+        // Code here
+        long long low=0,high=m,ans=-1;
+        while(low<=high)
+        {
+            long long mid=low+(high-low)/2;
+            long long sum=1;
+            for(int i=0;i<n;i++)
+            {
+                sum*=mid;
+                if(sum>m) break;
+            }
+            if(sum==m) return mid;
+            else if(sum<m) low=mid+1;
+            else high=mid-1;
+        }
+        return ans;
+    }
+};
+
+
+
+
+
+
 <<<<<<<<<<<<<<<<<<<..................>>>>>>>>>>>>>>>>>>>>
 Find the Smallest Divisor Given a Threshold
 
