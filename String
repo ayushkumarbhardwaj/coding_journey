@@ -1,3 +1,39 @@
+<<<<<<<<<<<<<<<<...............>>>>>>>>>>>>>>
+Sort Characters By Frequency
+
+class Solution {
+public:
+    string frequencySort(string s) {
+        unordered_map<char,int>m;
+        for(int x: s){
+            m[x]++;
+        }
+        string ans="";
+        int max=0;
+        while(m.size()>0){
+            char a;
+            for(auto &p:m){
+                if(p.second>max){
+                    max=p.second;
+                    a=p.first;
+                }
+            }
+            while(max--){
+                ans+=a;
+            }
+            m.erase(a);
+        }
+        return ans;
+    }
+};
+
+
+
+
+
+
+
+
 <<<<<<<<<<<<<<<<<<..............>>>>>>>>>>>>>>>>>>>
 Remove Outermost Parentheses
 
