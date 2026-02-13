@@ -1,3 +1,49 @@
+<<<<<<<<<<<<<<.............>>>>>>>>>>>>>
+Palindrome Linked List
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    bool isPalindrome(ListNode* head) {
+        ListNode* slow=head;
+        ListNode* fast=head;
+        while(fast!=nullptr && fast->next!=nullptr){
+            slow=slow->next;
+            fast=fast->next->next;
+        }
+        ListNode* temp=slow;
+        ListNode* pre=nullptr;
+        while(temp){
+            ListNode* fro=temp->next;
+            temp->next=pre;
+            pre=temp;
+            temp=fro;
+        }
+       ListNode* left=head;
+       while(pre){
+        if(left->val!=pre->val) return false;
+        left=left->next;
+        pre=pre->next;
+       }
+       return true;
+    }
+};
+
+
+
+
+
+
+
 <<<<<<<<<<<<............>>>>>>>>>>>>>>
 Linked List Cycle II
 
